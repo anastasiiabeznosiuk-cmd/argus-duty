@@ -1,0 +1,51 @@
+{
+  "name": "argus-duty",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "АРМ чергового зміни центру моніторингу надводної та повітряної обстановки (ARGUS)",
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c yellow,cyan \"npm:server\" \"npm:web\"",
+    "server": "node server/index.js",
+    "start": "node server/index.js",
+    "web": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "stories": "ladle serve",
+    "stories:build": "ladle build"
+  },
+  "dependencies": {
+    "@carbon/icons-react": "^11.92.0",
+    "@carbon/react": "^1.120.0",
+    "maplibre-gl": "^6.19.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5",
+    "ws": "^8.23.0",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@ladle/react": "^5.1.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.12",
+    "@vitejs/plugin-react": "^6.3.0",
+    "concurrently": "^10.0.7",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.14.0",
+    "jsdom": "^29.1.1",
+    "mermaid": "^12.3.0",
+    "playwright-core": "^1.65.1",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}

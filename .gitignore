@@ -1,0 +1,10 @@
+node_modules
+dist
+build
+server/data/runtime.json
+*.log
+docs/zapiska/__pycache__
+build
+.ladle/build
+_vitest.json
+.vitest
